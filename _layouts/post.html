@@ -1,5 +1,21 @@
----
-layout: default
----
-
-{{ content }}
+<!DOCTYPE html>
+<html lang="en_GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="date" content="{{ post.description }}" />
+    <meta name="" />
+    <title>{{ page.title }} | {{ site.title }}</title>
+  </head>
+  <body>
+    <label class="switch">
+      <input id="dlswitch" type="checkbox" />
+      <span class="slider"></span>
+    </label>
+    <div class="metadata">
+      <h5>{{ post.date }}</h5>
+      <h5>{{ post.categories }}</h5>
+    </div>
+    {{ content }}
+  </body>
+</html>

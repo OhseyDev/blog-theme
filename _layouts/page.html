@@ -1,5 +1,17 @@
----
-layout: default
----
-
-{{ content }}
+<!DOCTYPE html>
+<html lang="en_GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="author" content="{{ site.author }}" />
+    <meta name="description" content="{{ page.data.description }}" />
+    <title>{{ page.title }} | {{ site.title }}</title>
+  </head>
+  <body>
+    <label class="switch">
+      <input id="dlswitch" type="checkbox" />
+      <span class="slider"></span>
+    </label>
+    {{ content }}
+  </body>
+</html>
