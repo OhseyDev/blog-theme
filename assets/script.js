@@ -11,6 +11,9 @@ document.addEventListener("ready", () => {
   } else {
     document.getElementById("dlswitch").checked = true;
   }
+  document.getElementById("logo").addEventListener("click", () => {
+    window.location.href = "https://ohsey.me/";
+  });
 });
 function updateSwitch(self) {
   let lightmode = localStorage.getItem("lightmode");

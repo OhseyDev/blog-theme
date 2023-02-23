@@ -66,3 +66,24 @@ input:checked + .slider:before
 
 p, h1, h2, h3, h4, h5, h6
     margin: 2vh 2vw
+
+svg#logo
+    position: fixed
+    max-height: 80px
+    height: 20%
+    bottom: 1%
+    left: 1%
+    cursor: pointer
+    animation: SlideOutIn 2s linear
+    animation-play-state: paused
+    animation-delay: calc(var(--scroll) * -3s)
+
+svg#logo:hover
+    transform: scale(1.1)
+
+@keyframes SlideOutIn
+    from
+        left: -44%
+    to
+        bottom: 1%
+        left: 1%
